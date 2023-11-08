@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  margin-top: 120px;
+  margin-bottom: 70px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.header h1,
+.header p {
+  text-align: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.header p {
+  font-size: 1rem;
+  color: rgba(144, 144, 144, 0.8);
+}
+
+.menu {
+  display: flex;
+  margin: 30px 40px 100px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.menu .dish,
+.ads-image {
+  width: 320px;
+}
+
+.menu .dish {
+  /* width: 25%; */
+  margin: 20px;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #e7f2fd;
+  /* background-color: linear-gradient(to bottom, #000, #b5d7f8); */
+}
+
+.ads-image {
+  margin: 20px;
+  height: 340px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.menu .dish .dish-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 30px;
+}
+
+.dish .dish-content .dish-description {
+  padding: 0 20px;
+}
+
+.ads-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.dish .dish-content span {
+  padding-right: 25px;
+  display: inline-block;
+  margin-top: 16px;
+}
+
+.menu .dish .dish-image {
+  width: 100%;
+  position: relative;
+}
+
+.dish-image .dish-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.7rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dish-image .dish-icon .heart {
+  color: #ccc;
+  margin: auto;
+}
+
+/* .dish-image .dish-icon:hover .heart {
+  color: #00bfff;
+} */
+
+.dish-image .dish-icon:hover .heart,
+.dish-icon .heart.active {
+  color: #ff6363;
+}
+
+.menu .dish img {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  border-radius: 12px;
+}
+
+.dish .dish-content span .bottom-icon {
+  margin-right: 5px;
+}
+
+.dish .dish-content span .knife {
+  width: 16px;
+  /* height: 16px; */
+  height: 100%;
+  display: inline-block;
+}
+
+@media screen and (max-width: 1180px) {
+  .menu .dish,
+  .menu .ads-image {
+    max-width: 250px;
+  }
+
+  .dish .dish-content h4 {
+    font-size: 14px;
+  }
+
+  .dish .dish-content span {
+    padding-right: 10px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menu .dish,
+  .menu .ads-image {
+    max-width: 250px;
+  }
+
+  .menu {
+    margin: 30px 30px 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .menu .dish,
+  .menu .ads-image {
+    max-width: 250px;
+  }
+
+  .header h1 {
+    font-size: 2.5rem;
+  }
+
+  .menu {
+    margin: 30px 15px 0;
+  }
+
+  .header p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .menu .dish,
+  .menu .ads-image {
+    max-width: 220px;
+  }
+
+  .menu {
+    margin: 30px 15px 0;
+  }
+
+  .dish .dish-content h4,
+  .dish .dish-content span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .header h1 {
+    font-size: 2.2rem;
+  }
+
+  .menu {
+    justify-content: center;
+    margin: 30px 0 0;
+  }
+
+  .header p {
+    font-size: 0.8rem;
+  }
+  .menu .dish,
+  .menu .ads-image {
+    max-width: 220px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menu .dish,
+  .menu .ads-image {
+    max-width: 220px;
+  }
+}
+
+/* @media screen and (max-width: 520px) {
+  .menu .dish,
+  .menu .ads-image {
+    max-width: 200px;
+  }
+} */

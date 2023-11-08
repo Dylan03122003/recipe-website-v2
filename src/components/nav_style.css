@@ -1,0 +1,68 @@
+#navbar {
+    display: none;
+}
+
+#toggler {
+    display: none;
+}
+
+#togglerlabel {
+    display: none;
+    z-index: 2;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Màu nền mờ */
+    z-index: 1;
+}
+
+
+@media (max-width:768px) {
+    #togglerlabel {
+        display: block;
+    }
+
+    #navbar {
+        position: fixed;
+        flex-direction: column;
+        width: 250px;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 55%;
+        z-index: 999;
+        /* Đặt z-index cao hơn */
+        padding: 0 10px;
+        background-color: #fff;
+        border-top: 0.1rem solid rgba(0, 0, 0, .1);
+    }
+
+    #toggler:checked~#navbar {
+        display: flex;
+    }
+
+    #toggler:checked~#overlay {
+        display: block;
+        cursor: pointer;
+    }
+
+    #navbar a {
+        display: block;
+        gap: 5px;
+        padding: 10px 20px;
+    }
+
+    #navbar a:hover {
+        border: none;
+        border-left: 3px solid #000;
+    }
+
+
+}
