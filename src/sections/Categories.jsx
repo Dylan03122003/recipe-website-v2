@@ -6,7 +6,7 @@ import lunch1 from "./../assets/img/lunch1.png";
 import meat1 from "./../assets/img/meat1.png";
 import vegan1 from "./../assets/img/vegan1.png";
 function Grid(props) {
-  const [src1, src2] = props.srcs;
+  const [src1] = props.srcs;
   return (
     <div>
       <div className="justify-center items-center text-center relative">
