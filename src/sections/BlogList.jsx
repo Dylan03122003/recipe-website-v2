@@ -1,11 +1,11 @@
 import { useRef, useState } from "react";
 import { Link } from "react-router-dom";
+import ads from "../assets/img/ads.png";
+import img7 from "../assets/img/listblog_img7.png";
+import img8 from "../assets/img/listblog_img8.png";
+import img9 from "../assets/img/listblog_img9.png";
 import { blogsData } from "../data/blog";
 import { getFormattedDate } from "../utils/getFormattedDate";
-import ads from "./../assets/img/ads.png";
-import img7 from "./../assets/img/listblog_img7.png";
-import img8 from "./../assets/img/listblog_img8.png";
-import img9 from "./../assets/img/listblog_img9.png";
 
 const BlogList = () => {
   const searchKeyRef = useRef();
