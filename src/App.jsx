@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import MoreRecipeDetail from "./pages/MoreRecipeDetail";
 import MoreRecipes from "./pages/MoreRecipes";
+import { AboutDetail } from "./sections/AboutDetail";
+import { AboutUs } from "./sections/AboutUs";
 import Blog from "./sections/Blog";
 import BlogList from "./sections/BlogList";
 import Contact from "./sections/Contact";
@@ -21,6 +23,8 @@ const App = () => {
         <Route path="/blogs" element={<BlogList />} />
         <Route path="/blogs/:blogID" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/about/:id" element={<AboutDetail />} />
       </Routes>
     </>
   );

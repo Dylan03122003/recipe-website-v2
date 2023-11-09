@@ -1,10 +1,10 @@
 // import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { about } from "../assets/img";
 import { Abouts } from "../data/About";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 export const AboutUs = () => {
   const abouts = Abouts.map((item) => (
     <div
@@ -12,8 +12,11 @@ export const AboutUs = () => {
       className="max-w-[600px] mx-auto my-4 p-4 bg-gray-100 rounded-lg shadow-md"
     >
       <div>
-        <Link to={`/item/${item.id}`}>
-          <img className="w-[250px] h-[300px] rounded-[30px]" src={item.img} />
+        <Link to={`/about/${item.id}`}>
+          <img
+            className="w-[250px] h-[300px] rounded-[30px] object-cover"
+            src={item.img}
+          />
         </Link>
         <div>
           <div className="mt-2">
